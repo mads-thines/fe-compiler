@@ -1,0 +1,7 @@
+// Mixin used for outlines. In most cases they are defined in form.scss,
+// but there are cases like gender radio buttons where labels are styled,
+// so f.e we're using this to add outline on labels at some cases.
+@mixin outline($color: rgba(127, 127, 127, 0.15)) {
+  outline: 0 solid $color;
+  outline-offset: -1px;
+}

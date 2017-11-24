@@ -1,0 +1,106 @@
+#block-tjm-local-tasks {
+  $bp: 600px;
+  position: fixed;
+  z-index: 9;
+
+  @include media(($bp - 1px) down) {
+    right: 0;
+    width: 100%;
+    bottom: 0;
+  }
+
+  @include media($bp up) {
+    right: 0;
+    top: 20%;
+  }
+
+  // List
+  ul.tabs {
+    margin: 0;
+    padding: 0;
+    box-shadow: $base-shadow;
+
+    @include media(($bp - 1px) down) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    // Links
+    a {
+      font-family: $f-27Sans;
+      display: block;
+      color: $color-white;
+      padding: $base-leading/2 $base-gutter;
+      background-color: $color-orange;
+      transition: background-color $base-transition-links;
+      font-weight: $fw-bold;
+      letter-spacing: 0.5px;
+
+      &:hover {
+        background-color: darken($color-orange, 10%);
+        text-decoration: none;
+      }
+
+      @include media(($bp - 1px) down) {
+        text-align: center;
+        padding: $base-leading/2 $base-gutter/4;
+        min-width: 75px;
+      }
+    }
+
+    // List item
+    li {
+      list-style: none;
+
+      // Lines inbetween
+      &:nth-last-child(1n+2) {
+        a {
+          position: relative;
+          // Lines inbetween
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            background-color: transparentize($color-white, 0.7);
+
+            @include media(($bp - 1px) down) {
+              bottom: 15%;
+              right: 0;
+              width: 1px;
+              height: 70%;
+            }
+
+            @include media($bp up) {
+              bottom: 0;
+              left: 15%;
+              width: 70%;
+              height: 1px;
+            }
+          }
+        }
+      }
+
+      @include media(($bp - 1px) down) {
+        flex: 1;
+      }
+
+      @include media($bp up) {
+        &:first-child {
+          a {
+            padding-top: $base-leading/1.25;
+
+            border-top-left-radius: $base-gutter/4;
+          }
+        }
+
+        &:last-child {
+          a {
+            padding-bottom: $base-leading/1.25;
+
+            border-bottom-left-radius: $base-gutter/4;
+          }
+        }
+      }
+    }
+  }
+}

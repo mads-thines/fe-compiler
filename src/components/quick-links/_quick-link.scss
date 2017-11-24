@@ -1,0 +1,47 @@
+.page-quick-links {
+  $bp: 600px; // Set Breakpoint
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 8;
+  background-color: $color-white;
+  border: solid $color-lightBlue;
+  border-width: 1px 0 0;
+  box-shadow: $base-shadow;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: inline-block;
+    text-align: center;
+  }
+
+  a {
+    display: block;
+    padding: 0.625rem;
+    color: $color-black;
+    font-size: $font-size-tiny;
+    font-family: $f-27Sans;
+
+    span {
+      display: block;
+    }
+  }
+
+  // Responsive Styling
+  @include media(($bp - 1px) down) {
+    width: 100%;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    li {
+      flex: 1;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.w {
+  &--normal {
+    @include inner(($base-gutter*0.75) 1170px, 0 1210px, 0 1600px 70%);
+  }
+
+  &--narrow {
+    @include inner($base-gutter 770px, $base-gutter*2 768px, 0 850px);
+  }
+
+  &--wide {
+    &:not(.no-margin) {
+      padding-left: $base-leading;
+      padding-right: $base-leading;
+    }
+
+    &.no-margin {
+      margin: 0;
+    }
+
+    &.overflow-hidden {
+      overflow: hidden;
+    }
+  }
+}

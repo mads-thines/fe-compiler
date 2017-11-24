@@ -1,0 +1,12 @@
+.path-user {
+  .user-login,
+  .user-pass {
+    @include inner(null 500px);
+
+    .button {
+      @include media(580px down) {
+        width: 80%;
+      }
+    }
+  }
+}

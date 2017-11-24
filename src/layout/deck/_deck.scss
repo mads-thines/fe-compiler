@@ -1,0 +1,147 @@
+/**
+ * COPY FROM TRYG
+ */
+
+.deck {
+  position: relative;
+  width: 100%;
+
+  &--with-bg-transition {
+    transition: background-color $base-transition;
+  }
+
+  &--white {
+    background: $color-white;
+  }
+
+  &--light-grey,
+  &--breadcrumb,
+  &--grey-dark,
+  &--grey {
+    background: $color-lightGrey;
+  }
+
+  &--brand {
+    background-color: $color-orange;
+  }
+
+  &--black {
+    background: $color-black;
+  }
+
+  > .w--narrow,
+  > .w--normal,
+  > .w--wide {
+    position: relative;
+    padding-top: $base-leading*2;
+    padding-bottom: $base-leading*2;
+
+    @include media(768px up) {
+      padding-top: $base-leading*4;
+      padding-bottom: $base-leading*4;
+    }
+  }
+
+  &--half-padding {
+    > .w--narrow,
+    > .w--normal,
+    > .w--wide {
+      padding-top: $base-leading*2;
+      padding-bottom: $base-leading*2;
+
+      @include media(768px up) {
+        padding-top: $base-leading*2;
+        padding-bottom: $base-leading*2;
+      }
+    }
+  }
+
+  &--half-padding-top {
+    > .w--narrow,
+    > .w--normal,
+    > .w--wide {
+      padding-top: $base-leading;
+
+      @include media(768px up) {
+        padding-top: $base-leading*2;
+      }
+    }
+  }
+
+  &--half-padding-bottom {
+    > .w--narrow,
+    > .w--normal,
+    > .w--wide {
+      padding-bottom: $base-leading;
+
+      @include media(768px up) {
+        padding-bottom: $base-leading*2;
+      }
+    }
+  }
+
+  &--double-padding-top {
+    > .w--narrow,
+    > .w--normal,
+    > .w--wide {
+      padding-top: $base-leading*4;
+
+      @include media(768px up) {
+        padding-top: $base-leading*8;
+      }
+    }
+  }
+
+  &--double-padding-bottom {
+    > .w--narrow,
+    > .w--normal,
+    > .w--wide {
+      padding-bottom: $base-leading*4;
+
+      @include media(768px up) {
+        padding-bottom: $base-leading*8;
+      }
+    }
+  }
+
+  &--collapse {
+    > .w--narrow,
+    > .w--normal,
+    > .w--wide {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &--collapse-top {
+    > .w--narrow,
+    > .w--normal,
+    > .w--wide {
+      padding-top: 0;
+    }
+  }
+
+  &--collapse-bottom {
+    > .w--narrow,
+    > .w--normal,
+    > .w--wide {
+      padding-bottom: 0;
+    }
+  }
+
+  &--pull-up {
+    top: $base-leading*2;
+    margin-bottom: $base-leading*2;
+
+    @include media(768px up) {
+      top: $base-leading*4;
+      margin-bottom: $base-leading*4;
+    }
+
+    > .w--narrow,
+    > .w--normal,
+    > .w--wide {
+      padding-top: 0;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+// stylelint-disable
+$fontsPath: '../public/fonts/';
+
+// 27 Sans Light
+@font-face {
+  font-family: '27Sans';
+  src: url("#{$fontsPath}27Sans-Light?#iefix");
+  src: url("#{$fontsPath}27Sans-Light?#iefix") format("eot"),
+  url('#{$fontsPath}27Sans-Light.woff') format('woff'),
+  url('#{$fontsPath}27Sans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+// 27 Sans Regular
+@font-face {
+  font-family: '27Sans';
+  src: url("#{$fontsPath}27Sans-Regular?#iefix");
+  src: url("#{$fontsPath}27Sans-Regular?#iefix") format("eot"),
+  url('#{$fontsPath}27Sans-Regular.woff') format('woff'),
+  url('#{$fontsPath}27Sans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+// 27 Sans Bold
+@font-face {
+  font-family: '27Sans';
+  src: url("#{$fontsPath}27Sans-Bold?#iefix");
+  src: url("#{$fontsPath}27Sans-Bold?#iefix") format("eot"),
+  url('#{$fontsPath}27Sans-Bold.woff') format('woff'),
+  url('#{$fontsPath}27Sans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

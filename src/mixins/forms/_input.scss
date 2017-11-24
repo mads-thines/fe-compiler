@@ -1,0 +1,25 @@
+// Input appearance
+@mixin inputAppearance {
+  padding: $base-leading*0.6 $base-gutter*0.6;
+  max-width: 100%;
+  width: 100%;
+  font-weight: $fw-light;
+  background-color: $color-lighterGrey;
+  border-radius: $base-radius;
+  border: $base-border;
+  border-left-width: 5px;
+  letter-spacing: $base-gutter/40;
+
+  // If the input is required
+  &:required {
+    transition: border-color $base-transition;
+
+    &:valid {
+      border-left-color: $color-peach;
+    }
+
+    &:invalid {
+      border-left-color: $color-mediumGrey;
+    }
+  }
+}

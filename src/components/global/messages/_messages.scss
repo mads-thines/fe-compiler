@@ -1,0 +1,40 @@
+.messages {
+  @include media(600px up) {
+    position: fixed;
+    top: 130px;
+    right: 0;
+    z-index: 20;
+    left: 100%;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    margin-left: $base-gutter*0.75;
+    margin-right: $base-gutter*0.75;
+    padding: $base-leading/2;
+    box-shadow: $base-shadow;
+    border: 1px solid lighten($color-orange, 25%);
+    border-left: 5px solid $color-orange;
+    font-size: $font-size-tiny;
+    background: lighten($color-orange, 46%);
+    line-height: 1.2;
+    margin-bottom: $base-leading/2;
+
+    @include media(600px up) {
+      max-width: 250px;
+      min-width: 250px;
+      transition: transform $base-transition;
+      transform: translateX(-10%);
+      animation: initiateMessages 7s ease 1;
+
+      &:hover {
+        transform: translateX(-105%);
+        animation-fill-mode: paused;
+      }
+    }
+  }
+}

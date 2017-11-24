@@ -1,0 +1,11 @@
+# Ignore
+node_modules
+package-lock.json
+yarn.lock
+yarn-error.log
+.idea
+
+# Dist
+dist/**/*.css
+dist/**/*.map
+dist/**/*.js

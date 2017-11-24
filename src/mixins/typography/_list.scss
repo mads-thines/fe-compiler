@@ -1,0 +1,41 @@
+// UL - Unordered list
+@mixin unorderedList {
+  font-size: $font-size-small;
+  padding-left: $base-gutter;
+
+  li {
+    list-style: none;
+    position: relative;
+
+    // Bullet
+    &::before {
+      $bulletSize: 4px;
+      content: '';
+      display: inline-block;
+      width: $bulletSize;
+      height: $bulletSize;
+      position: absolute;
+      left: -$base-gutter;
+      top: $bulletSize*2;
+      background-color: $color-orange;
+      border-radius: 50%;
+    }
+
+    // Margin in between
+    &:nth-last-child(1n+2) {
+      margin-bottom: $base-leading/4;
+    }
+  }
+}
+
+// LI - List item
+@mixin list-item {
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    background-color: $color-orange;
+    border-radius: 50%;
+  }
+}

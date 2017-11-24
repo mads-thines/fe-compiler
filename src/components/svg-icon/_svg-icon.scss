@@ -1,0 +1,11 @@
+.svg-icon {
+  $svgSize: $base-gutter*2;
+  width: $svgSize;
+  height: $svgSize;
+  fill: $color-black;
+
+  &--small {
+    width: $svgSize/1.5;
+    height: $svgSize/1.5;
+  }
+}
