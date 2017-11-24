@@ -3,10 +3,6 @@
 
 I'll continuously update this brining more documentation and features.
 
-## Requirements
-- Node
-- Sass
-
 ## Quick Setup
 ```
 yarn install
