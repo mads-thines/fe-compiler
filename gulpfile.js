@@ -9,7 +9,7 @@ var gulp          = require('gulp'),
     autoprefixer  = require('autoprefixer'),
     cssnano       = require('cssnano'),
     gulpStylelint = require('gulp-stylelint'),
-    webpack       = require('gulp-webpack'),
+    webpack       = require('webpack-stream'),
     tildeImporter = require('node-sass-tilde-importer'),
     browserSync   = require('browser-sync').create();
 

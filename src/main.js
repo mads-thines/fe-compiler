@@ -1,2 +1,2 @@
-//import { myCustomFunction } from './components/component/_component';
-// myCustomFunction()
+import { myCustomFunction } from './components/component/_component';
+myCustomFunction();
