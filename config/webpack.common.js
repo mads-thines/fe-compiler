@@ -4,8 +4,8 @@ const webpack        = require('webpack'), //to access built-in plugins
       path           = require('path');
 
 // Defining relative path
-const srcPath  = path.join(__dirname, './src/'),
-      distPath = path.join(__dirname, './dist/');
+const srcPath  = path.join(__dirname, '../src/'),
+      distPath = path.join(__dirname, '../dist/');
 
 // Set the configs for webpack
 const config = {

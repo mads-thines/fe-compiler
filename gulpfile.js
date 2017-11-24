@@ -71,7 +71,7 @@ gulp.task('scss', function() {
 });
 
 // The watcher
-gulp.task('watch', function() {
+gulp.task('default', function() {
   browserSync.reload();
   gulp.watch("src/**/*.scss", ['scss']);
 });

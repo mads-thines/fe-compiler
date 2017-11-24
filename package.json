@@ -29,10 +29,10 @@
   },
   "scripts": {
     "start": "npm-run-all --parallel watch:gulp watch:webpack",
-    "watch:gulp": "gulp watch",
-    "watch:webpack": "webpack --config webpack.dev.js",
+    "watch:gulp": "gulp default",
+    "watch:webpack": "webpack --config config/webpack.dev.js",
     "build:gulp": "gulp scss",
-    "build:webpack": "webpack --config webpack.prod.js",
+    "build:webpack": "webpack --config config/webpack.prod.js",
     "build:prod": "npm-run-all build:gulp build:webpack",
     "ngrok": "ngrok http -auth='adapt:test' -host-header=dev.tjm-forsikring 80"
   },
