@@ -1,0 +1,1 @@
+[Go here and generate your Favicons https://realfavicongenerator.net/](https://realfavicongenerator.net/)

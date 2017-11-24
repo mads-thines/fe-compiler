@@ -1,35 +1,35 @@
 // stylelint-disable
 $fontsPath: '../public/fonts/';
 
-// 27 Sans Light
+// Custom Font Light
 @font-face {
-  font-family: '27Sans';
-  src: url("#{$fontsPath}27Sans-Light?#iefix");
-  src: url("#{$fontsPath}27Sans-Light?#iefix") format("eot"),
-  url('#{$fontsPath}27Sans-Light.woff') format('woff'),
-  url('#{$fontsPath}27Sans-Light.ttf') format('truetype');
+  font-family: 'customFont';
+  src: url("#{$fontsPath}customFont-Light?#iefix");
+  src: url("#{$fontsPath}customFont-Light?#iefix") format("eot"),
+  url('#{$fontsPath}customFont-Light.woff') format('woff'),
+  url('#{$fontsPath}customFont-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
-// 27 Sans Regular
+// Custom Font Regular
 @font-face {
-  font-family: '27Sans';
-  src: url("#{$fontsPath}27Sans-Regular?#iefix");
-  src: url("#{$fontsPath}27Sans-Regular?#iefix") format("eot"),
-  url('#{$fontsPath}27Sans-Regular.woff') format('woff'),
-  url('#{$fontsPath}27Sans-Regular.ttf') format('truetype');
+  font-family: 'customFont';
+  src: url("#{$fontsPath}customFont-Regular?#iefix");
+  src: url("#{$fontsPath}customFont-Regular?#iefix") format("eot"),
+  url('#{$fontsPath}customFont-Regular.woff') format('woff'),
+  url('#{$fontsPath}customFont-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
-// 27 Sans Bold
+// Custom Font Bold
 @font-face {
-  font-family: '27Sans';
-  src: url("#{$fontsPath}27Sans-Bold?#iefix");
-  src: url("#{$fontsPath}27Sans-Bold?#iefix") format("eot"),
-  url('#{$fontsPath}27Sans-Bold.woff') format('woff'),
-  url('#{$fontsPath}27Sans-Bold.ttf') format('truetype');
+  font-family: 'customFont';
+  src: url("#{$fontsPath}customFont-Bold?#iefix");
+  src: url("#{$fontsPath}customFont-Bold?#iefix") format("eot"),
+  url('#{$fontsPath}customFont-Bold.woff') format('woff'),
+  url('#{$fontsPath}customFont-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }

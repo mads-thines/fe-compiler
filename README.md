@@ -1,6 +1,7 @@
-## Relevant links
-- [TJM Forsikring Jira Board](https://adaptdk.atlassian.net/secure/RapidBoard.jspa?rapidView=873&projectKey=TFP&view=planning)
-- [Work Files](https://drive.google.com/drive/folders/0B5Kd9Pj5r4AqZW9BUkhwenE5a1k?usp=sharing)
+# SCSS & Js FE Compiling Boilerplate
+### Using Gulp, Webpack 3, Babel, esLint, Stylelint, nGrok, PostCSS and more
+
+I'll continuously update this brining more documentation and features.
 
 ## Requirements
 - Node
