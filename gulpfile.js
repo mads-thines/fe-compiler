@@ -26,7 +26,7 @@ gulp.task('scss', function() {
       remove: true
     }),
     inlinesvg({ // Inline SVG's
-      path: './images/svg'
+      path: './public/svg'
     }),
     cssnano({ // Minify
       zindex: false,
