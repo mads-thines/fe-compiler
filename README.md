@@ -28,7 +28,7 @@ yarn install
 yarn sync
 ```
 
-### Essential Folder Structure
+## Folder Structure
 ```
 .
 ├─ config
