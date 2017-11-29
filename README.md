@@ -10,6 +10,7 @@ I'll continuously update this brining more documentation and features.
 ```bash
 # Install the Dependencies
 yarn install
+
 # Start the Watcher
 yarn start
 ```
@@ -19,8 +20,10 @@ yarn start
 ```bash
 # Install the Global Dependencies
 yarn preinstall
+
 # Install the dependencies
 yarn install
+
 # Start the watcher
 yarn sync
 ```
