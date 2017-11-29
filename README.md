@@ -9,12 +9,14 @@ yarn install
 yarn start
 ```
 
-### Folder Structure
+### Essential Folder Structure
 ```
 .
-├─ dist
-│  ├─ main.css
-│  └─ main.js
+├─ config
+│  ├─ .babelrc
+│  ├─ webpack.common.js
+│  ├─ webpack.dev.js
+│  └─ webpack.prod.js
 ├─ public
 │  ├─ favicons
 │  ├─ fonts
@@ -29,8 +31,8 @@ yarn start
 │  ├─ vendor
 │  ├─ main.js
 │  └─ main.scss
-├─ README.md
+├─ .eslintrc
+├─ .stylelintrc
 ├─ gulpfile.js
 ├─ package.json
-└─ webpack.config.js
 ```
