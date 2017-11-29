@@ -36,7 +36,7 @@
     "build:webpack": "webpack --config config/webpack.prod.js",
     "build:prod": "npm-run-all build:gulp build:webpack",
     "browserSync": "browser-sync start --proxy 'YOURDOMAIN' --files '**/*.twig, **/*.css, **/*.js'",
-    "preinstall": "npm install -g browser-sync",
+    "preinstall": "npm install -g browser-sync ngrok",
     "ngrok": "ngrok http -auth='admin:pass' -host-header=YOURDOMAIN 80"
   },
   "homepage": "https://github.com/mads-thines/fe-compiler#readme",
@@ -54,8 +54,8 @@
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-polyfill": "6.26.0",
     "babel-preset-env": "1.6.1",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-es2016": "6.24.1",
     "browser-sync": "2.18.13",
     "cssnano": "3.10.0",
     "eslint": "4.11.0",
@@ -75,7 +75,6 @@
     "gulp-uglify": "3.0.0",
     "gulp-util": "3.0.8",
     "lodash": "4.17.4",
-    "ngrok": "2.2.24",
     "node-sass-tilde-importer": "1.0.0",
     "npm": "5.5.1",
     "npm-run-all": "4.1.2",
@@ -84,7 +83,7 @@
     "stylelint-scss": "2.1.0",
     "uglifyjs-webpack-plugin": "1.1.1",
     "webpack": "3.8.1",
-    "webpack-merge": "^4.1.1",
+    "webpack-merge": "4.1.1",
     "webpack-stream": "4.0.0"
   },
   "dependencies": {

@@ -15,7 +15,7 @@ yarn install
 yarn start
 ```
 
-### With BrowserSync
+### With BrowserSync or nGrok
 
 ```bash
 # Install the Global Dependencies
@@ -24,8 +24,11 @@ yarn preinstall
 # Install the dependencies
 yarn install
 
-# Start the watcher
+# Start the watcher with BrowserSync
 yarn sync
+
+# Start nGrok
+yarn ngrok
 ```
 
 ## Folder Structure
