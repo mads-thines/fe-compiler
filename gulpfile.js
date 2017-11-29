@@ -68,10 +68,10 @@ gulp.task('scss', function() {
              .pipe(sourcemaps.write('.'))
              // Output
              .pipe(gulp.dest('./dist'));
+  browserSync.reload();
 });
 
 // The watcher
 gulp.task('default', function() {
-  browserSync.reload();
   gulp.watch("src/**/*.scss", ['scss']);
 });

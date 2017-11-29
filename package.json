@@ -28,12 +28,14 @@
     "url": "https://github.com/mads-thines/fe-compiler/issues"
   },
   "scripts": {
-    "start": "npm-run-all --parallel watch:gulp watch:webpack",
+    "start": "npm-run-all --parallel browserSync watch:gulp watch:webpack",
     "watch:gulp": "gulp default",
     "watch:webpack": "webpack --config config/webpack.dev.js",
     "build:gulp": "gulp scss",
     "build:webpack": "webpack --config config/webpack.prod.js",
     "build:prod": "npm-run-all build:gulp build:webpack",
+    "browserSync": "browser-sync start --proxy 'dev.tjm-forsikring' --files '**/*.twig, **/*.css, **/*.js'",
+    "preinstall": "npm install -g browser-sync",
     "ngrok": "ngrok http -auth='adapt:test' -host-header=dev.tjm-forsikring 80"
   },
   "homepage": "https://github.com/mads-thines/fe-compiler#readme",
