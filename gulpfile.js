@@ -1,21 +1,32 @@
 "use strict";
 
-var gulp          = require('gulp'),
-    postcss       = require('gulp-postcss'),
-    sass          = require('gulp-sass'),
-    plumber       = require('gulp-plumber'),
-    sourcemaps    = require('gulp-sourcemaps'),
-    inlinesvg     = require('postcss-inline-svg'),
-    autoprefixer  = require('autoprefixer'),
-    cssnano       = require('cssnano'),
-    gulpStylelint = require('gulp-stylelint'),
-    webpack       = require('webpack-stream'),
-    tildeImporter = require('node-sass-tilde-importer'),
-    browserSync   = require('browser-sync').create();
+// Modules
+const gulp          = require('gulp'),
+      postcss       = require('gulp-postcss'),
+      sass          = require('gulp-sass'),
+      plumber       = require('gulp-plumber'),
+      sourcemaps    = require('gulp-sourcemaps'),
+      inlinesvg     = require('postcss-inline-svg'),
+      autoprefixer  = require('autoprefixer'),
+      cssnano       = require('cssnano'),
+      gulpStylelint = require('gulp-stylelint'),
+      tildeImporter = require('node-sass-tilde-importer'),
+      sassdoc       = require('sassdoc'),
+      browserSync   = require('browser-sync').create();
 
-var onError = function(err) {
-  console.log(err);
-};
+// Paths
+const pathSrc = './src/**/*.scss';
+const pathDist = './dist';
+
+// Documentation
+gulp.task('sassdoc', function() {
+  const sassdocOptions = {
+    'dest': 'docs',
+  };
+
+  return gulp.src(pathSrc)
+             .pipe(sassdoc(sassdocOptions));
+});
 
 // SCSS
 gulp.task('scss', function() {
@@ -39,7 +50,7 @@ gulp.task('scss', function() {
     })
   ];
 
-  return gulp.src('./src/**/*.scss')
+  return gulp.src(pathSrc)
              // Plumber prevents Gulp from breaking because of errors
              .pipe(plumber({
                errorHandler: function(error) {
@@ -47,6 +58,7 @@ gulp.task('scss', function() {
                  this.emit('end');
                }
              }))
+
              // Style Compiling Config.
              .pipe(gulpStylelint({ // Linting
                reporters: [
@@ -56,22 +68,34 @@ gulp.task('scss', function() {
                  }
                ]
              }))
+
              // Initiate Source Map
              .pipe(sourcemaps.init())
+
              // SASS Compiling
              .pipe(sass({
                importer: tildeImporter,
              }))
+
              // PostCSS Preprocessing
              .pipe(postcss(processors))
+
              // Write the Source Map
              .pipe(sourcemaps.write('.'))
+
              // Output
-             .pipe(gulp.dest('./dist'));
+             .pipe(gulp.dest(pathDist));
+
   browserSync.reload();
 });
 
-// The watcher
+// Run and create documentation
+gulp.task('doc', function() {
+  gulp.watch(pathSrc, ['scss']);
+  gulp.watch(pathSrc, ['sassdoc']);
+});
+
+// The Default Watcher
 gulp.task('default', function() {
-  gulp.watch("src/**/*.scss", ['scss']);
+  gulp.watch(pathSrc, ['scss']);
 });

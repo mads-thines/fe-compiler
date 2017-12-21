@@ -5,7 +5,6 @@
   "rules": {
     "scss/at-import-no-partial-leading-underscore": true,
     "scss/at-mixin-argumentless-call-parentheses": "never",
-    "scss/dollar-variable-colon-newline-after": "always-multi-line",
     "scss/dollar-variable-colon-space-after": "always",
     "scss/dollar-variable-colon-space-before": "never",
     "scss/selector-no-redundant-nesting-selector": true,
@@ -36,7 +35,6 @@
     "number-leading-zero": "always",
     "number-max-precision": 4,
     "number-no-trailing-zeros": true,
-    "string-no-newline": true,
     "length-zero-no-unit": true,
     "time-min-milliseconds": 100,
     "unit-no-unknown": true,
@@ -147,6 +145,7 @@
           "include",
           "mixin",
           "return",
+          "content",
           "content",
           "each",
           "at-root",
