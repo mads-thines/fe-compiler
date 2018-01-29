@@ -2,34 +2,12 @@
 $fontsPath: '../public/fonts/';
 
 // Custom Font Light
-@font-face {
-  font-family: 'customFont';
-  src: url("#{$fontsPath}customFont-Light?#iefix");
-  src: url("#{$fontsPath}customFont-Light?#iefix") format("eot"),
-  url('#{$fontsPath}customFont-Light.woff') format('woff'),
-  url('#{$fontsPath}customFont-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-// Custom Font Regular
-@font-face {
-  font-family: 'customFont';
-  src: url("#{$fontsPath}customFont-Regular?#iefix");
-  src: url("#{$fontsPath}customFont-Regular?#iefix") format("eot"),
-  url('#{$fontsPath}customFont-Regular.woff') format('woff'),
-  url('#{$fontsPath}customFont-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-// Custom Font Bold
-@font-face {
-  font-family: 'customFont';
-  src: url("#{$fontsPath}customFont-Bold?#iefix");
-  src: url("#{$fontsPath}customFont-Bold?#iefix") format("eot"),
-  url('#{$fontsPath}customFont-Bold.woff') format('woff'),
-  url('#{$fontsPath}customFont-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
+//@font-face {
+//  font-family: 'customFont';
+//  src: url("#{$fontsPath}customFont-Light?#iefix");
+//  src: url("#{$fontsPath}customFont-Light?#iefix") format("eot"),
+//  url('#{$fontsPath}customFont-Light.woff') format('woff'),
+//  url('#{$fontsPath}customFont-Light.ttf') format('truetype');
+//  font-weight: 300;
+//  font-style: normal;
+//}

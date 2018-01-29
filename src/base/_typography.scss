@@ -18,7 +18,7 @@ h6 {
     font-size: $hS-value * 0.85;
     margin: $hS-value 0 $hS-value/4;
 
-    @include media(768px up) {
+    @media (min-width: 768px) {
       font-size: $hS-value;
     }
 
@@ -67,7 +67,7 @@ p {
 a {
   cursor: pointer;
   color: $color-orange;
-  transition: color $base-transition-links;
+  transition: color $base-trans-links;
 
   &:hover {
     color: $color-black;

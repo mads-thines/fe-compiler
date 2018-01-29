@@ -1,15 +1,6 @@
 //
-/// Pre Code Vendor Import
-@import "vendor/pre-vendor";
-//
 /// Settings
 @import "settings/settings";
-//
-/// Mixins
-@import "mixins/mixins";
-//
-/// Elements
-@import "elements/elements";
 //
 /// Base
 @import "base/base";
@@ -20,5 +11,5 @@
 /// Components
 @import "components/components";
 //
-/// Post Code Vendor Import
-@import "vendor/post-vendor";
+/// Elements
+@import "elements/elements";
