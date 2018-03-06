@@ -11,50 +11,17 @@ I'll continuously update this brining more documentation and features.
 # Install the Dependencies
 yarn install
 
-# Start the Watcher
+# Start the Watcher with BrowserSync
 yarn start
+
+# Start the watcher
+yarn watch
 ```
 
 ### With BrowserSync or nGrok
 
 ```bash
-# Install the Global Dependencies
-yarn preinstall
-
-# Install the dependencies
-yarn install
-
-# Start the watcher with BrowserSync
-yarn sync
-
 # Start nGrok
 yarn ngrok
 ```
 
-## Folder Structure
-```
-.
-├─ config
-│  ├─ .babelrc
-│  ├─ webpack.common.js
-│  ├─ webpack.dev.js
-│  └─ webpack.prod.js
-├─ public
-│  ├─ favicons
-│  ├─ fonts
-│  └─ svg
-├─ src
-│  ├─ base
-│  ├─ components
-│  ├─ elements
-│  ├─ layout
-│  ├─ mixins
-│  ├─ settings
-│  ├─ vendor
-│  ├─ main.js
-│  └─ main.scss
-├─ .eslintrc
-├─ .stylelintrc
-├─ gulpfile.js
-├─ package.json
-```
