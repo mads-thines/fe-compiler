@@ -11,22 +11,11 @@ const gulp          = require('gulp'),
       cssnano       = require('cssnano'),
       gulpStylelint = require('gulp-stylelint'),
       tildeImporter = require('node-sass-tilde-importer'),
-      sassdoc       = require('sassdoc'),
       browserSync   = require('browser-sync').create();
 
 // Paths
 const pathSrc = './src/**/*.scss';
 const pathDist = './dist';
-
-// Documentation
-gulp.task('sassdoc', function() {
-  const sassdocOptions = {
-    'dest': 'docs',
-  };
-
-  return gulp.src(pathSrc)
-             .pipe(sassdoc(sassdocOptions));
-});
 
 // SCSS
 gulp.task('scss', function() {
@@ -87,12 +76,6 @@ gulp.task('scss', function() {
              .pipe(gulp.dest(pathDist));
 
   browserSync.reload();
-});
-
-// Run and create documentation
-gulp.task('doc', function() {
-  gulp.watch(pathSrc, ['scss']);
-  gulp.watch(pathSrc, ['sassdoc']);
 });
 
 // The Default Watcher
