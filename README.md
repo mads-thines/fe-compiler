@@ -11,8 +11,11 @@ I'll continuously update this brining more documentation and features.
 # Install the Dependencies
 yarn install
 
-# Start the Watcher
+# Start the Watcher with BrowserSync
 yarn start
+
+# Start the watcher
+yarn watch
 ```
 
 ### With BrowserSync or nGrok
