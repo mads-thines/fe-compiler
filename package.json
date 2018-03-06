@@ -1,8 +1,8 @@
 {
   "name": "fe-compiler",
   "author": "mads-thines",
-  "version": "1.0.0",
-  "description": "A Frontend Compiling Boilerplate with Gulp, Webpack 3, Babel, esLint, Stylelint, nGrok, PostCSS and more",
+  "version": "1.0.12",
+  "description": "A Frontend Compiling Boilerplate with Gulp, Webpack 4, Babel, esLint, Stylelint, nGrok, PostCSS and more",
   "main": "package.json",
   "license": "BSD-3-Clause",
   "scripts": {
@@ -23,7 +23,7 @@
     "SCSS",
     "JavaScript",
     "Gulp",
-    "Webpack 3",
+    "Webpack 4",
     "Babel",
     "esLint",
     "Stylelint",
