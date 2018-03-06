@@ -18,12 +18,6 @@ yarn start
 ### With BrowserSync or nGrok
 
 ```bash
-# Install the dependencies
-yarn install
-
-# Start the watcher with BrowserSync
-yarn sync
-
 # Start nGrok
 yarn ngrok
 ```
