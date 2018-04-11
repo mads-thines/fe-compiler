@@ -11,7 +11,7 @@
     "watch:gulp": "gulp default",
     "watch:webpack": "webpack --mode development --config config/webpack.dev.js",
     "build": "npm-run-all build:gulp build:webpack",
-    "build:gulp": "gulp scss",
+    "build:gulp": "gulp scss --production",
     "build:webpack": "webpack --mode production --config config/webpack.prod.js",
     "browserSync": "browser-sync start --config 'config/browsersync.js'",
     "ngrok": "ngrok -auth='adapt:logmein' -host-header=localhost 80"
@@ -57,6 +57,7 @@
     "gulp": "3.9.1",
     "gulp-autoprefixer": "5.0.0",
     "gulp-babel": "7.0.1",
+    "gulp-changed": "3.2.0",
     "gulp-eslint": "4.0.2",
     "gulp-gzip": "1.4.2",
     "gulp-plumber": "1.2.0",
