@@ -41,7 +41,7 @@ module.exports = {
   // Don't open the browser
   open: false,
   // But we still ask BrowserSync to watch changes in our local files
-  files: ['public/**', '../dist/**.*.css', '../dist/**.*.js'],
+  files: ['./public/**', './templates/*.twig', './dist/**/*.css', './dist/**/*.js'],
   // Now when a file is changed, BrowserSync in the browser updates the
   // corresponding src/href (which it finds through SHEER MAGIC as far as
   // I know) to include a new query string, which prompts the browser to
