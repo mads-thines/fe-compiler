@@ -4,6 +4,7 @@ package-lock.json
 yarn.lock
 yarn-error.log
 .idea
+.history
 .DS_Store
 
 # Dist
